@@ -23,4 +23,6 @@ jobs:
       - name: Test with pytest
         run: |
           pip install pytest-mock
-          pytest
+          pip install coverage
+          coverage run -m pytest
+          coverage report
