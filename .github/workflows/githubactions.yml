@@ -25,4 +25,6 @@ jobs:
           pip install pytest-mock
           pip install coverage
           coverage run -m pytest
+      - name: Generate report
+        run: |
           coverage report
